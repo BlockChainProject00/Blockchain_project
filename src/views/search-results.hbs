@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <link rel="stylesheet" href="/styles.css"> <!-- Add your CSS file if needed -->
+</head>
+<body>
+  <h1>Search Results</h1>
+  <a class="btn btn-warning mb-3" href="/bills/add">Manage Patients</a>
+  <table class="table" style="background-color: white;"> 
+    <thead class="thead-dark" style="background-color: #101010;
+    color: white;">
+      <tr>
+        <th>Patient Name</th>
+        <th>Amount</th>
+        <th>Age</th>
+        <th>Description</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each patients}}
+        <tr>
+          <td>{{this.patientName}}</td>
+          <td>{{this.amount}}</td>
+          <td>{{this.age}}</td>
+          <td>{{this.description}}</td>
+          <td>{{this.createdAt}}</td>
+          <td>{{this.updatedAt}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

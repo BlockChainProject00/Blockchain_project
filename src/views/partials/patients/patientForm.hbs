@@ -1,0 +1,64 @@
+
+<div><p>Welcome, {{ username }}! <a href="/logout">Logout</a></p></div>
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    
+  <h3>Add A Patient</h3>
+  
+  <form action="/patients/add" method="post">
+   
+
+    {{! Patient Name Input }}
+    
+    <div class="mb-3">
+      <label for="patientName">Patient Name:</label>
+      <input
+        id="patientName"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="patientName"
+        required
+        autofocus
+      />
+    </div>
+
+    {{! Age Input }}
+   
+    <div class="mb-3">
+      <label for="age">Age:</label>
+      <input
+        id="age"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="age"
+        required
+      />
+    </div>
+
+    {{! Amount Input }}
+   
+    <div class="mb-3">
+      <label for="amount">Amount:</label>
+      <input
+        id="amount"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="amount"
+        placeholder="Amount"required
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="mb-3">
+      <label for="description">Description:</label>
+      
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="description"
+        cols="80"
+        placeholder="Add a Description"required
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>

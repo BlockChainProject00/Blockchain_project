@@ -1,0 +1,48 @@
+
+
+ 
+.mdl{
+  margin-left: 0px !important;
+}
+  
+  .login-box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 400px;
+    width: 100%;margin-left: 270px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button.btn-success {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button.btn-success:hover {
+    background-color: #45a049;
+  }

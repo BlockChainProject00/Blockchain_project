@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/styles.css">
+   <link rel="stylesheet" href="/src/public/css/login.css">
+</head>
+<body class="bg-black">
+    <div class="container"><div class="login-box">
+        <h1>Medical Login</h1>
+        <form action="/medical/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" class="form-control"  required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control" required><br>
+
+            <button type="submit" class="btn btn-success">Login</button>
+        </form></div>
+    </div>
+</body>
+</html>

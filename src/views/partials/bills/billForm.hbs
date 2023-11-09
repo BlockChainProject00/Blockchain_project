@@ -1,0 +1,64 @@
+
+
+<div class="card card-body p-4 rounded-0 bg-dark text-white login-box mdl">
+    
+  <h3>Add A Bill</h3>
+  
+  <form action="/bills/add" method="post">
+   
+
+    {{! Bill Name Input }}
+    
+    <div class="mb-3">
+      <label for="billName">Bill Name:</label>
+      <input
+        id="billName"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="billName"
+        required
+        autofocus
+      />
+    </div>
+
+    {{! Date Input }}
+   
+    <div class="mb-3">
+      <label for="date">Date:</label>
+      <input
+        id="date"
+        class="form-control rounded-0 bg-dark text-white"
+        type="date"
+        name="date"
+        required
+      />
+    </div>
+
+    {{! Amount Input }}
+   
+    <div class="mb-3">
+      <label for="amount">Bill Amount:</label>
+      <input
+        id="amount"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="amount"
+        placeholder="Amount" required
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="mb-3">
+      <label for="description">Bill Description:</label>
+      
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="description"
+        cols="80"
+        placeholder="Add a Description"required
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>

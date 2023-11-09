@@ -1,0 +1,42 @@
+{{#if patients}}
+  <!-- Add patient button -->
+  <div><a class="btn btn-success mb-3" href="/patients/add">Add Patient</a></div>
+  <a class="btn btn-warning mb-3" href="/bills/add">Manage Patients</a>
+  <table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Patient Name</th> 
+        <th>Age</th> 
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each patients}}
+        <tr>
+          <td>{{@index}}</td>
+          <td><strong>{{patientName}}</strong></td> 
+          <td>{{age}}</td> 
+          <td>{{amount}}</td> 
+          <td>{{description}}</td>
+          <td>
+            <a class="btn btn-success" href="/patients/{{_id}}/edit">Edit</a> 
+            <a class="btn btn-danger" href="/patients/{{_id}}/delete">Delete</a> 
+            
+
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  
+{{else}}
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+      <h1>No patients</h1> 
+      <img src="/icons/empty.svg" class="w-75" />
+    </div>
+  </div>
+{{/if}}
